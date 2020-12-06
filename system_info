@@ -4,6 +4,7 @@
 # Github URL:   Todo
 # License:      MIT
 # Date:         2020-12-26
+# Refer to:     vtrois/spacepack
 
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin
 
@@ -17,7 +18,7 @@ RGB_END='\033[0m'
 tool_info() {
     echo -e "========================================================================================="
     echo -e "                             System Info tool for SpacePack                              "
-    echo -e "          For more information please visit https://github.com/vtrois/spacepack          "
+    echo -e "          For more information please visit https://github.com/Kinmfer/Linux_Scripts     "
     echo -e "========================================================================================="
 }
 
