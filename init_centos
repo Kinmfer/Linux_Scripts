@@ -21,8 +21,8 @@ LOCK=/var/log/spacepack_init_centos.log
 
 tool_info() {
     echo -e "========================================================================================="
-    echo -e "                              Init CentOS 8 for SpacePack                                "
-    echo -e "          For more information please visit https://github.com/vtrois/spacepack          "
+    echo -e "                             Init CentOS 7/8 tool for Kinmfer                              "
+    echo -e "          For more information please visit https://github.com/Kinmfer/Linux_Scripts     "
     echo -e "========================================================================================="
 }
 
