@@ -102,6 +102,10 @@ change_software_source(){
 	
 }
 
+install_necessary_software() {
+    dnf -y install net-tools tree nmap lrzsz dos2unix telnet screen vim lsof wget iftop bash-completion tcpdump   &>/dev/null
+}
+
 disable_software() {
     echo "============= selinux cockpit firewalld =============" >> ${LOCK} 2>&1
     echo -en "${RGB_WAIT}Configuring...${RGB_END}"
@@ -458,8 +462,9 @@ main() {
     echo -e "\n${RGB_INFO}3/21 : Time zone adjustment${RGB_END}"
     time_zone
 
-	echo -e "\n${RGB_INFO}4/21 : Time zone adjustment${RGB_END}"
+    echo -e "\n${RGB_INFO}4/21 : Time zone adjustment${RGB_END}"
     change_software_source
+    install_necessary_software
     
     echo -e "\n${RGB_INFO}5/21 : Disable selinux, cockpit and firewalld${RGB_END}"
     disable_software
