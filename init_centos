@@ -130,7 +130,7 @@ custom_profile() {
     echo "============= custom profile =============" >> ${LOCK} 2>&1
     echo -en "${RGB_WAIT}Configuring...${RGB_END}"
     cat > /etc/profile.d/spacepack.sh << EOF
-PS1="\[\e[32;1m\][\u@\h \W]\\$ \[\e[0m\]"
+PS1='\[\e[32;1m\][\u@\h \W]\$ \[\e[0m\]'
 GREP_OPTIONS="--color=auto"
 #alias l='ls -AFhlt'
 #alias grep='grep --color'
