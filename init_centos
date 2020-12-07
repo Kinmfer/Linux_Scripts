@@ -440,16 +440,17 @@ qcloud_hostname() {
 
 reboot_os() {
     echo -e "\n${RGB_WARNING}Please restart the server and see if the services start up fine.${RGB_END}"
-    echo -en "${RGB_WARNING}Do you want to restart OS ? [y/n]: ${RGB_END}"
-    while :; do
-        read REBOOT_STATUS
-        if [[ ! "${REBOOT_STATUS}" =~ ^[y,n]$ ]]; then
-            echo -en "${RGB_DANGER}Input error, please only input 'y' or 'n': ${RGB_END}"
-        else
-            break
-        fi
-    done
-    [ "${REBOOT_STATUS}" == 'y' ] && reboot
+    #echo -en "${RGB_WARNING}Do you want to restart OS ? [y/n]: ${RGB_END}"
+    #while :; do
+    #    read REBOOT_STATUS
+    #    if [[ ! "${REBOOT_STATUS}" =~ ^[y,n]$ ]]; then
+    #        echo -en "${RGB_DANGER}Input error, please only input 'y' or 'n': ${RGB_END}"
+    #    else
+    #       break
+    #    fi
+    #done
+    #[ "${REBOOT_STATUS}" == 'y' ] && reboot
+    reboot
 }
 
 main() {
